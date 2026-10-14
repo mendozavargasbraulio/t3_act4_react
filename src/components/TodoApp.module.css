@@ -1,24 +1,59 @@
-.contenedor {
-    width: 650px;
+.pagina {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.encabezado {
+    width: 690px;
     max-width: 90%;
-    margin: 40px auto;
+    margin: 0 auto 35px auto;
+    text-align: center;
+}
+
+.etiqueta {
+    color: #b44a68;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.encabezado h1 {
+    color: #741f3b;
+    font-size: 3rem;
+    margin: 10;
+}
+
+.subtitulo {
+    color: #8a5867;
+    font-size: 1.1rem;
+    margin-top: 25px;
+}
+
+.contenedor {
+    width: 690px;
+    max-width: 90%;
+    margin: 0 auto;
     padding: 30px;
 
-    background-color: #f8f1f3;
-    border: 1px solid #d7b9c1;
+    background-color: #fff7f9;
+    border: 1px solid #deb6c2;
     border-radius: 12px;
 
-    color: #3b1f27;
+    box-sizing: border-box;
 }
 
 .contenedor h2 {
-    color: #6f1d35;
+    color: #741f3b;
     font-size: 2rem;
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
 .contador {
-    color: #7a4756;
+    color: #8a5867;
     margin-bottom: 25px;
 }
 
@@ -32,10 +67,10 @@
     flex: 1;
     padding: 12px;
 
-    border: 1px solid #b98a97;
-    border-radius: 6px;
-
     font-size: 1rem;
+
+    border: 1px solid #c99eaa;
+    border-radius: 6px;
 }
 
 .formulario button {
@@ -64,6 +99,7 @@
 
     background-color: white;
 
+    border: 1px solid #ead6dc;
     border-left: 5px solid #7b1e3a;
     border-radius: 6px;
 }
@@ -74,7 +110,7 @@
 
 .completada {
     text-decoration: line-through;
-    color: #9a7a83;
+    color: #a2868e;
 }
 
 .eliminar {

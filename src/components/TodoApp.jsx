@@ -10,7 +10,6 @@ function TodoApp() {
     ]);
 
     const [nuevaTarea, setNuevaTarea] = useState("");
-
     const agregarTarea = () => {
         if (nuevaTarea.trim() === "") {
             return;
@@ -50,46 +49,60 @@ function TodoApp() {
     };
 
     return (
-        <div className={styles.contenedor}>
-            <h2>Mis tareas</h2>
+        <div className={styles.pagina}>
 
-            <p className={styles.contador}>
-                Tareas pendientes:{" "}
-                {tareas.filter((tarea) => !tarea.completada).length}
-            </p>
+            <header className={styles.encabezado}>
+                <p className={styles.etiqueta}>
+                    MI PRIMERA APP CON REACT
+                </p>
 
-            <div className={styles.formulario}>
-                <input
-                    type="text"
-                    placeholder="Escribe una nueva tarea..."
-                    value={nuevaTarea}
-                    onChange={(evento) =>
-                        setNuevaTarea(evento.target.value)
-                    }
-                />
+                <h1>NotePad Digital</h1>
 
-                <button onClick={agregarTarea}>
-                    Agregar
-                </button>
-            </div>
+                <p className={styles.subtitulo}>
+                    Desarrollado por Guacamole Studio
+                </p>
+            </header>
+            <div className={styles.contenedor}>
+                <h2>Mis tareas</h2>
 
-            {tareas.length === 0 ? (
-                <p>No hay tareas disponibles.</p>
-            ) : (
-                tareas.map((tarea) => (
-                    <ItemActividad
-                        key={tarea.id}
-                        nombre={tarea.nombre}
-                        completada={tarea.completada}
-                        onCompletar={() =>
-                            completarTarea(tarea.id)
-                        }
-                        onEliminar={() =>
-                            eliminarTarea(tarea.id)
+                <p className={styles.contador}>
+                    Tareas pendientes:{" "}
+                    {tareas.filter((tarea) => !tarea.completada).length}
+                </p>
+
+                <div className={styles.formulario}>
+                    <input
+                        type="text"
+                        placeholder="Escribe una nueva tarea..."
+                        value={nuevaTarea}
+                        onChange={(evento) =>
+                            setNuevaTarea(evento.target.value)
                         }
                     />
-                ))
-            )}
+
+                    <button onClick={agregarTarea}>
+                        Agregar
+                    </button>
+                </div>
+
+                {tareas.length === 0 ? (
+                    <p>No hay tareas disponibles.</p>
+                ) : (
+                    tareas.map((tarea) => (
+                        <ItemActividad
+                            key={tarea.id}
+                            nombre={tarea.nombre}
+                            completada={tarea.completada}
+                            onCompletar={() =>
+                                completarTarea(tarea.id)
+                            }
+                            onEliminar={() =>
+                                eliminarTarea(tarea.id)
+                            }
+                        />
+                    ))
+                )}
+            </div>
         </div>
     );
 }
