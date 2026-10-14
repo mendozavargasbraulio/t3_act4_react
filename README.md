@@ -135,8 +135,8 @@ Cuando agrego, completo o elimino una tarea, utilizo `setTareas` para actualizar
 
 ## d) Enlace del repositorio de GitHub
 
-jejeje
+(https://github.com/mendozavargasbraulio/t3_act4_react)
 
 ## e) Enlace del proyecto en GitHub Pages
 
-jejej
+https://mendozavargasbraulio.github.io/t3_act4_react/
