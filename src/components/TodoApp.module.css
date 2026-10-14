@@ -1,0 +1,94 @@
+.contenedor {
+    width: 650px;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+
+    background-color: #f8f1f3;
+    border: 1px solid #d7b9c1;
+    border-radius: 12px;
+
+    color: #3b1f27;
+}
+
+.contenedor h2 {
+    color: #6f1d35;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contador {
+    color: #7a4756;
+    margin-bottom: 25px;
+}
+
+.formulario {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.formulario input {
+    flex: 1;
+    padding: 12px;
+
+    border: 1px solid #b98a97;
+    border-radius: 6px;
+
+    font-size: 1rem;
+}
+
+.formulario button {
+    padding: 12px 22px;
+
+    background-color: #7b1e3a;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #5e162c;
+}
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+    margin-bottom: 12px;
+
+    background-color: white;
+
+    border-left: 5px solid #7b1e3a;
+    border-radius: 6px;
+}
+
+.tarea input {
+    margin-right: 12px;
+}
+
+.completada {
+    text-decoration: line-through;
+    color: #9a7a83;
+}
+
+.eliminar {
+    padding: 8px 14px;
+
+    background-color: #a3394e;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.eliminar:hover {
+    background-color: #7b1e3a;
+}
